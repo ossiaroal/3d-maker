@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Store - Create Smart Products</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; }
+        header { background-color: #1e90ff; color: white; padding: 20px; text-align: center; }
+        .store-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .store-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .store-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .store-card h3 {
+            margin-top: 10px;
+        }
+        .store-card p {
+            color: #555;
+        }
+        .store-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electronics Store</h1>
+    </header>
+    <div class="store-grid">
+        <div class="store-card">
+            <img src="store/item1.png" alt="ESP32 Dev Board">
+            <h3>ESP32 Dev Board</h3>
+            <p>Wi-Fi & Bluetooth microcontroller for IoT projects</p>
+            <a href="https://example.com/esp32" target="_blank">Buy Now</a>
+        </div>
+        <div class="store-card">
+            <img src="store/item2.png" alt="OLED Display">
+            <h3>OLED Display</h3>
+            <p>0.96 inch I2C display for showing data</p>
+            <a href="https://example.com/oled" target="_blank">Buy Now</a>
+        </div>
+        <div class="store-card">
+            <img src="store/item3.png" alt="DHT11 Sensor">
+            <h3>DHT11 Sensor</h3>
+            <p>Temperature and Humidity sensor module</p>
+            <a href="https://example.com/dht11" target="_blank">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>
