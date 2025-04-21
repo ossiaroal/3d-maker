@@ -4,57 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electronics Store - Create Smart Products</title>
+    <title>Electronics Store</title>
+    
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; }
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f8f8f8; }
         header { background-color: #1e90ff; color: white; padding: 20px; text-align: center; }
-        .store-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 40px;
-        }
-        .store-card {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .store-card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .store-card h3 {
-            margin-top: 10px;
-        }
-        .store-card p {
-            color: #555;
-        }
-        .store-card a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #1e90ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+        nav { background-color: #104e8b; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        footer { background-color: #eee; text-align: center; padding: 20px; font-size: 14px; color: #555; margin-top: 50px; }
+        .content { padding: 40px; background-color: white; max-width: 1000px; margin: auto; border-radius: 10px; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 10px; padding: 15px; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .card img { width: 100%; border-radius: 8px; }
+        .card a.button { margin-top: 10px; padding: 10px 20px; background-color: #1e90ff; color: white; text-decoration: none; border-radius: 5px; display: inline-block; }
     </style>
+
 </head>
 <body>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="3d_models.html">3D Models</a>
-    <a href="electronics_store.html">Store</a>
-    <a href="project_weather_monitor.html">Project</a>
-</nav>
-
     <header>
         <h1>Electronics Store</h1>
     </header>
-
+    
 <nav>
     <a href="index.html">Home</a>
     <a href="3d_models.html">3D Models</a>
@@ -62,34 +33,33 @@
     <a href="project_weather_monitor.html">Project</a>
 </nav>
 
-    <div class="store-grid">
-        <div class="store-card">
-            <img src="store/item1.png" alt="ESP32 Dev Board">
-            <h3>ESP32 Dev Board</h3>
-            <p>Wi-Fi & Bluetooth microcontroller for IoT projects</p>
-            <a href="https://example.com/esp32" target="_blank">Buy Now</a>
-        </div>
-        <div class="store-card">
-            <img src="store/item2.png" alt="OLED Display">
-            <h3>OLED Display</h3>
-            <p>0.96 inch I2C display for showing data</p>
-            <a href="https://example.com/oled" target="_blank">Buy Now</a>
-        </div>
-        <div class="store-card">
-            <img src="store/item3.png" alt="DHT11 Sensor">
-            <h3>DHT11 Sensor</h3>
-            <p>Temperature and Humidity sensor module</p>
-            <a href="https://example.com/dht11" target="_blank">Buy Now</a>
-        </div>
+    <div class="content">
+        
+<div class="card-grid">
+    <div class="card">
+        <img src="store/item1.png" alt="ESP32">
+        <h3>ESP32 Dev Board</h3>
+        <p>WiFi + Bluetooth Microcontroller</p>
+        <a href="#" class="button">Buy</a>
     </div>
+    <div class="card">
+        <img src="store/item2.png" alt="OLED">
+        <h3>OLED Display</h3>
+        <p>0.96 inch I2C Display</p>
+        <a href="#" class="button">Buy</a>
+    </div>
+    <div class="card">
+        <img src="store/item3.png" alt="DHT11">
+        <h3>DHT11 Sensor</h3>
+        <p>Temperature and Humidity Sensor</p>
+        <a href="#" class="button">Buy</a>
+    </div>
+</div>
 
+    </div>
+    
 <footer>
     &copy; 2025 Create Smart Products. Contact: info@example.com | <a href="#">FAQ</a> | <a href="#">Community</a>
-</footer>
-
-
-<footer>
-    &copy; 2025 Create Smart Products. Contact: info@example.com | FAQ | Community
 </footer>
 
 </body>

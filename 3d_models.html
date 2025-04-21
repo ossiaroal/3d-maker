@@ -4,51 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Models - Create Smart Products</title>
+    <title>3D Models</title>
+    
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f8f8f8; }
         header { background-color: #1e90ff; color: white; padding: 20px; text-align: center; }
-        .model-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 40px;
-        }
-        .model-card {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .model-card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .model-card a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #1e90ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+        nav { background-color: #104e8b; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        footer { background-color: #eee; text-align: center; padding: 20px; font-size: 14px; color: #555; margin-top: 50px; }
+        .content { padding: 40px; background-color: white; max-width: 1000px; margin: auto; border-radius: 10px; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 10px; padding: 15px; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .card img { width: 100%; border-radius: 8px; }
+        .card a.button { margin-top: 10px; padding: 10px 20px; background-color: #1e90ff; color: white; text-decoration: none; border-radius: 5px; display: inline-block; }
     </style>
+
 </head>
 <body>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="3d_models.html">3D Models</a>
-    <a href="electronics_store.html">Store</a>
-    <a href="project_weather_monitor.html">Project</a>
-</nav>
-
     <header>
-        <h1>Download 3D Models</h1>
+        <h1>3D Models</h1>
     </header>
-
+    
 <nav>
     <a href="index.html">Home</a>
     <a href="3d_models.html">3D Models</a>
@@ -56,28 +33,27 @@
     <a href="project_weather_monitor.html">Project</a>
 </nav>
 
-    <div class="model-grid">
-        <div class="model-card">
-            <img src="models/model1.png" alt="Model 1">
-            <a href="models/model1.png" download>Download</a>
-        </div>
-        <div class="model-card">
-            <img src="models/model2.png" alt="Model 2">
-            <a href="models/model2.png" download>Download</a>
-        </div>
-        <div class="model-card">
-            <img src="models/model3.png" alt="Model 3">
-            <a href="models/model3.png" download>Download</a>
-        </div>
+    <div class="content">
+        
+<div class="card-grid">
+    <div class="card">
+        <img src="models/model1.png" alt="Model 1">
+        <a href="models/model1.png" download class="button">Download</a>
     </div>
+    <div class="card">
+        <img src="models/model2.png" alt="Model 2">
+        <a href="models/model2.png" download class="button">Download</a>
+    </div>
+    <div class="card">
+        <img src="models/model3.png" alt="Model 3">
+        <a href="models/model3.png" download class="button">Download</a>
+    </div>
+</div>
 
+    </div>
+    
 <footer>
     &copy; 2025 Create Smart Products. Contact: info@example.com | <a href="#">FAQ</a> | <a href="#">Community</a>
-</footer>
-
-
-<footer>
-    &copy; 2025 Create Smart Products. Contact: info@example.com | FAQ | Community
 </footer>
 
 </body>
