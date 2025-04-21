@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Smart Products</title>
+    <title>Upload 3D Model</title>
     
     
 <style>
@@ -45,7 +45,7 @@ body.dark-mode {
 </head>
 <body>
     <header>
-        <h1>Create Smart Products</h1>
+        <h1>Upload 3D Model</h1>
     </header>
     
 <nav>
@@ -58,8 +58,24 @@ body.dark-mode {
 
     <div class="content">
         
-<img src="assets/hero.png" alt="Hero" style="width:100%; border-radius: 10px; margin-bottom: 20px;">
-<p>Welcome to Create Smart Products. Download 3D Models, Buy Electronic Parts, and Start Your DIY Journey.</p>
+<h2>Submit Your 3D Model</h2>
+<p>We welcome all creators to share their smart product designs. Fill out the form below to submit your model.</p>
+<form action="mailto:info@example.com" method="POST" enctype="text/plain" style="display: flex; flex-direction: column; gap: 10px; max-width: 600px; margin: 0 auto;">
+    <label for="name">Your Name (optional):</label>
+    <input type="text" id="name" name="name" placeholder="e.g. Alex Maker">
+
+    <label for="modelname">Model Name:</label>
+    <input type="text" id="modelname" name="modelname" placeholder="e.g. Smart Lamp Case" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" placeholder="Briefly describe your model and its purpose." required></textarea>
+
+    <label for="filename">Filename (e.g. .stl):</label>
+    <input type="text" id="filename" name="filename" placeholder="e.g. smartlamp.stl">
+
+    <button type="submit" style="padding: 10px; background-color: var(--header-bg); color: var(--button-text); border: none; border-radius: 5px;">Submit Model</button>
+</form>
+<p style="text-align: center; margin-top: 20px;">Note: File upload is not supported in browser-only mode. Please email your .STL file manually if needed.</p>
 
     </div>
     

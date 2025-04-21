@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Smart Products</title>
+    <title>Project Collection</title>
     
     
 <style>
@@ -45,21 +45,62 @@ body.dark-mode {
 </head>
 <body>
     <header>
-        <h1>Create Smart Products</h1>
+        <h1>Project Collection</h1>
     </header>
     
 <nav>
     <a href="index.html">Home</a>
     <a href="3d_models.html">3D Models</a>
     <a href="electronics_store.html">Store</a>
-    <a href="projects.html">Projects</a>
-    <a href="upload_model.html">Upload</a>
+    <a href="project_weather_monitor.html">Project</a>
 </nav>
 
     <div class="content">
         
-<img src="assets/hero.png" alt="Hero" style="width:100%; border-radius: 10px; margin-bottom: 20px;">
-<p>Welcome to Create Smart Products. Download 3D Models, Buy Electronic Parts, and Start Your DIY Journey.</p>
+<h2 style="text-align:center;">Explore Our Smart Projects</h2>
+<div style="text-align:center; margin: 20px;">
+    <input type="text" id="searchInput" placeholder="Search projects..." onkeyup="filterProjects()" 
+        style="padding: 10px; width: 300px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
+</div>
+
+<div class="card-grid" id="projectGrid">
+    <div class="card" data-keywords="weather temperature humidity environment">
+        <img src="assets/hero.png" alt="Weather Monitor">
+        <h3>Weather Monitor</h3>
+        <p>Track temperature and humidity using ESP32 + DHT11.</p>
+        <p><strong>Category:</strong> Environment</p>
+        <a href="project_weather_monitor.html" class="button">View Project</a>
+    </div>
+    <div class="card" data-keywords="ai assistant voice oled">
+        <img src="assets/hero.png" alt="AI Voice Assistant">
+        <h3>AI Voice Assistant</h3>
+        <p>A portable assistant device using ESP32 + OLED.</p>
+        <p><strong>Category:</strong> AI</p>
+        <a href="#" class="button">Coming Soon</a>
+    </div>
+    <div class="card" data-keywords="lamp light smart controller home">
+        <img src="assets/hero.png" alt="Smart Lamp">
+        <h3>Smart Lamp Controller</h3>
+        <p>Control your desk lamp with mobile app and sensors.</p>
+        <p><strong>Category:</strong> Home Automation</p>
+        <a href="#" class="button">Coming Soon</a>
+    </div>
+</div>
+
+<script>
+function filterProjects() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('#projectGrid .card');
+    cards.forEach(card => {
+        const keywords = card.getAttribute('data-keywords');
+        if (keywords.includes(input)) {
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+</script>
 
     </div>
     
