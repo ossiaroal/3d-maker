@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Models - Create Smart Products</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #1e90ff; color: white; padding: 20px; text-align: center; }
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .model-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .model-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .model-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Download 3D Models</h1>
+    </header>
+    <div class="model-grid">
+        <div class="model-card">
+            <img src="models/model1.png" alt="Model 1">
+            <a href="models/model1.png" download>Download</a>
+        </div>
+        <div class="model-card">
+            <img src="models/model2.png" alt="Model 2">
+            <a href="models/model2.png" download>Download</a>
+        </div>
+        <div class="model-card">
+            <img src="models/model3.png" alt="Model 3">
+            <a href="models/model3.png" download>Download</a>
+        </div>
+    </div>
+</body>
+</html>
